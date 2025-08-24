@@ -7,7 +7,7 @@ This plugin calculates various statistics about a post and stores them in an art
 
 wc: how many words
 read_mins: how many minutes to read this article, based on 250 wpm (http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension)
-word_counts: frquency count of all the words in the article; can be used for tag/word clouds/
+word_counts: frequency count of all the words in the article; can be used for tag/word clouds/
 fi: Flesch-kincaid Index/ Reading Ease
 fk: Flesch-kincaid Grade Level
 
@@ -39,7 +39,7 @@ def calculate_stats(instance):
         raw_text = raw_text.replace("&nbsp;", " ")
         raw_text = re.sub(entities, "", raw_text)
 
-        # Flesch-kincaid readbility stats counts sentances,
+        # Flesch-kincaid readability stats counts sentences,
         # so save before removing punctuation
         tmp = raw_text
 
@@ -55,7 +55,7 @@ def calculate_stats(instance):
         stats["word_counts"] = word_count
         stats["wc"] = sum(word_count.values())
 
-        # Calulate how long it'll take to read, rounding up
+        # Calculate how long it'll take to read, rounding up
         stats["read_mins"] = (stats["wc"] + WPM - 1) // WPM
         if stats["read_mins"] == 0:
             stats["read_mins"] = 1
