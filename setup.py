@@ -39,7 +39,8 @@ AUTHOR_EMAIL = find_meta(*META_PATH, meta_key="email")
 URL = find_meta(*META_PATH, meta_key="url")
 LICENSE = find_meta(*META_PATH, meta_key="license")
 
-PACKAGES = setuptools.find_packages()
+# PACKAGES = setuptools.find_packages()
+PACKAGES = ["minchin", ]
 
 INSTALL_REQUIRES = [
     "pelican",
@@ -131,9 +132,9 @@ setuptools.setup(
     extras_require=EXTRA_REQUIRES,
     platforms="any",
     classifiers=CLASSIFIERS,
-    namespace_packages=[
-        "minchin",
-        "minchin.pelican",
-        "minchin.pelican.plugins",
-    ],
+    # namespace_packages=[
+    #     "minchin",
+    #     "minchin.pelican",
+    #     "minchin.pelican.plugins",
+    # ],
 )
