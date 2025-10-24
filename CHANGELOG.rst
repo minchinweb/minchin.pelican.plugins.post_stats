@@ -3,6 +3,8 @@ Image Process Changelog
 
 This Changelog is for ``minchin.pelican.plugins.post_stats``.
 
+- :support:`-` Move to implicit namespace. c.f. `CName #153
+  <https://github.com/minchinweb/minchin.pelican.plugins.cname/issues/153>`_.
 - :release:`1.2.0 <2023-08-09>`
 - :feature:`-` auto-activate the plugin using
   ``minchin.pelican.plugins.autoloader``.
