@@ -17,3 +17,4 @@ releaser:
       - wheel
     pypi:
       # - python-dateutil
+      # - pelican
