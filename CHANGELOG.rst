@@ -3,6 +3,7 @@ Image Process Changelog
 
 This Changelog is for ``minchin.pelican.plugins.post_stats``.
 
+- :support:`3` Move from ``setup.py`` to ``pyproject.toml``
 - :support:`2` Move to implicit namespace. c.f. `CName #153
   <https://github.com/minchinweb/minchin.pelican.plugins.cname/issues/153>`_.
 - :release:`1.2.0 <2023-08-09>`
